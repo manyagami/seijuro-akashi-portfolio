@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKASHI SEIJURO | The Absolute Emperor</title>
+
+  <!-- Google Fonts: Anton & Bebas Neue (High-Impact Poster Display) + Space Grotesk (Clean Editorial Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- External JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       FIXED CORNER BRAND & GLASSMORPHISM HAMBURGER BUTTON
+       ======================================================================== -->
+  <a href="#home" class="brand-corner" aria-label="Back to Home">
+    <span class="brand-badge">#4</span>
+    <span class="brand-label">RAKUZAN // EMPEROR</span>
+  </a>
+
+  <button
+    class="hamburger-btn"
+    id="hamburgerBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="navDrawer"
+  >
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+
+  <!-- ========================================================================
+       GLASSMORPHISM NAVIGATION DRAWER
+       ======================================================================== -->
+  <nav class="nav-drawer" id="navDrawer" aria-label="Main Navigation" aria-hidden="true">
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-panel">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home <span class="nav-num">01</span></a></li>
+        <li><a href="#skills" class="nav-link">Skills <span class="nav-num">02</span></a></li>
+        <li><a href="#achievement" class="nav-link">Achievement <span class="nav-num">03</span></a></li>
+        <li><a href="#about" class="nav-link">About <span class="nav-num">04</span></a></li>
+        <li><a href="#media" class="nav-link">Media <span class="nav-num">05</span></a></li>
+        <li><a href="#socmed" class="nav-link">Socmed <span class="nav-num">06</span></a></li>
+      </ul>
+
+      <div class="nav-footer-note">
+        <strong>Akashi Seijuro</strong>
+        Rakuzan High Point Guard · Captain No. 4<br />
+        "My orders are absolute."
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       HERO / HOME SECTION (ZZZ-INSPIRED EDITORIAL POSTER LAYOUT)
+       ======================================================================== -->
+  <header id="home" class="hero">
+    <div class="hero-bg-slash" aria-hidden="true"></div>
+
+    <!-- Top Editorial Title Header -->
+    <div class="hero-top-bar">
+      <div class="hero-title-group">
+        <h1>AKASHI <span>SEIJURO</span></h1>
+        <p class="hero-subtitle">The Absolute Emperor</p>
+      </div>
+
+      <div class="hero-meta-badge" aria-label="Rakuzan High Captain Number 4">
+        <span class="jersey-num">#4</span>
+        <div class="jersey-meta">
+          <strong>Rakuzan High</strong>
+          Point Guard · Captain
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Editorial Poster Stage -->
+    <div class="hero-stage">
+      <!-- Massive Stacked Condensed Poster Typography -->
+      <div class="hero-stacked-bg" aria-hidden="true">
+        <span class="stack-word stack-word--crimson">RAKUZAN</span>
+        <span class="stack-word stack-word--outline">CAPTAIN</span>
+        <span class="stack-word stack-word--cream">EMPEROR</span>
+      </div>
+
+      <!-- Center Foreground Character Artwork (Local Asset: home.png) -->
+      <div class="hero-character-wrap">
+        <img
+          src="home.png"
+          alt="Seijuro Akashi editorial character artwork"
+          class="hero-character-img js-fallback-img"
+        />
+        <div class="hero-img-fallback">
+          <strong class="fallback-title">HERO ARTWORK PLACEHOLDER</strong>
+          <p class="fallback-desc">Place your character render in the project root as:</p>
+          <code>home.png</code>
+        </div>
+      </div>
+
+      <!-- Dynamic Diagonal Brush-Stroke & Geometric Foreground Graphics -->
+      <div class="hero-brush-overlay" aria-hidden="true">
+        <svg class="hero-brush-svg" viewBox="0 0 1440 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Bold Diagonal Crimson Brush Slash -->
+          <path
+            d="M-40 365C180 315 390 250 610 198C820 148 1030 128 1280 54L1470 12C1310 92 1085 152 840 214C560 284 310 342 -20 408L-40 365Z"
+            fill="#D6285B"
+          />
+          <!-- Secondary Warm Cream Calligraphic Accent Stroke -->
+          <path
+            d="M110 388C340 330 570 268 790 215C980 169 1150 130 1365 78L1388 94C1165 154 960 205 745 256C515 310 310 362 125 404L110 388Z"
+            fill="#EFE0C9"
+          />
+          <!-- Sharp Geometric Accent Block -->
+          <polygon points="1180,295 1370,240 1350,270 1160,325" fill="#D6285B" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Bottom Corner Badges & Scroll Prompt -->
+    <div class="hero-bottom-bar">
+      <div class="hero-corner-stamp">
+        <span>赤司 征十郎</span>
+        <span>//</span>
+        <span>NO. 04</span>
+      </div>
+
+      <div class="hero-quote-tag">
+        "IN ALL THINGS, VICTORY IS EVERYTHING."
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        SCROLL DOWN ↓
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         ABOUT SECTION
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">01 // Sovereign Profile</span>
+            <h2 class="section-title">About Akashi</h2>
+          </div>
+          <span class="section-index">ABSOLUTE DOSSIER</span>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-statement reveal">
+            <div>
+              <p class="about-lead">
+                <strong>Seijuro Akashi</strong> is the undisputed commander of both Teikō Junior High's legendary
+                <em>Generation of Miracles</em> and powerhouse <em>Rakuzan High</em>. Born into strict discipline and
+                unmatched expectations, he views victory not as a goal, but as a natural law.
+              </p>
+              <p class="about-body">
+                Distinguished by his striking heterochromatic eyes—one crimson, one imperial gold—Akashi possesses a
+                chilling court presence capable of bending the strongest prodigies to his will. Guided by his philosophy
+                that those who stand against him must kneel, he orchestrates every possession with cold precision,
+                unyielding authority, and complete mastery over the flow of the game.
+              </p>
+            </div>
+
+            <div class="about-quote-box">
+              "I AM ABSOLUTE."
+              <span>// SEIJURO AKASHI</span>
+            </div>
+          </article>
+
+          <aside class="about-dossier reveal">
+            <div>
+              <div class="dossier-title">
+                PLAYER METRICS
+                <span>#4 PG</span>
+              </div>
+              <ul class="dossier-list">
+                <li class="dossier-item">
+                  <span class="dossier-label">Affiliation</span>
+                  <span class="dossier-value">Rakuzan High / Teikō / Vorpal Swords</span>
+                </li>
+                <li class="dossier-item">
+                  <span class="dossier-label">Position</span>
+                  <span class="dossier-value">Point Guard (Captain)</span>
+                </li>
+                <li class="dossier-item">
+                  <span class="dossier-label">Jersey Number</span>
+                  <span class="dossier-value">#4 (Rakuzan &amp; Teikō)</span>
+                </li>
+                <li class="dossier-item">
+                  <span class="dossier-label">Eyes</span>
+                  <span class="dossier-value eye-indicator">
+                    <span class="eye-dot eye-dot--crimson" title="Crimson Eye"></span>
+                    <span class="eye-dot eye-dot--gold" title="Amber/Gold Emperor Eye"></span>
+                    Heterochromia
+                  </span>
+                </li>
+                <li class="dossier-item">
+                  <span class="dossier-label">Signature Trait</span>
+                  <span class="dossier-value">Emperor Eye &amp; Complete Zone</span>
+                </li>
+                <li class="dossier-item">
+                  <span class="dossier-label">Philosophy</span>
+                  <span class="dossier-value">Victory is Absolute</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SKILLS SECTION
+         ====================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">02 // Tactical Arsenal</span>
+            <h2 class="section-title">Skills &amp; Abilities</h2>
+          </div>
+          <span class="section-index">03 CATEGORIES</span>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Signature Abilities -->
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <h2 class="skill-cat">Signature Abilities</h2>
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="skill-entries">
+              <div class="skill-entry">
+                <h3>Emperor Eye</h3>
+                <p>
+                  Observes the slightest physical details—such as breathing, heartbeat, muscle contractions, and center
+                  of gravity—to predict an opponent's next move before they make it.
+                </p>
+              </div>
+
+              <div class="skill-entry">
+                <h3>The Zone</h3>
+                <p>
+                  Enters a state of peak physical and mental focus at will, dramatically amplifying his speed, reflexes,
+                  and the predictive accuracy of his Emperor Eye.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Technical Basketball Skills -->
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <h2 class="skill-cat">Technical Basketball Skills</h2>
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="skill-entries">
+              <div class="skill-entry">
+                <h3>Ankle-Break Dribble</h3>
+                <p>
+                  Uses the Emperor Eye to spot the exact moment a defender shifts their weight, executing a sudden
+                  crossover that disrupts their center of gravity and drops them to the floor.
+                </p>
+              </div>
+
+              <div class="skill-entry">
+                <h3>Streetball Handles &amp; Elbow Pass</h3>
+                <p>
+                  Combines fundamental point guard control with flashy, high-speed streetball dribbling and misdirection
+                  passes.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Mental & Strategic Traits -->
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <h2 class="skill-cat">Mental &amp; Strategic Traits</h2>
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 18h20l-2-11-5 4-3-6-3 6-5-4-2 11z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="skill-entries">
+              <div class="skill-entry">
+                <h3>Absolute Leadership</h3>
+                <p>
+                  Commands total discipline from elite players, seamlessly adapting his strategy between solo domination
+                  and team-wide synchronization.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ACHIEVEMENT SECTION
+         ====================================================================== -->
+    <section id="achievement" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">03 // Undefeated Legacy</span>
+            <h2 class="section-title">Achievements</h2>
+          </div>
+          <span class="section-index">05 MILESTONES</span>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-rank">01</div>
+            <div class="timeline-content">
+              <h3>Three Consecutive National Championships</h3>
+              <p>
+                Led Teikō Junior High's basketball team to three straight national titles, establishing an undefeated
+                middle school legacy.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-rank">02</div>
+            <div class="timeline-content">
+              <h3>Captain of the Generation of Miracles</h3>
+              <p>
+                Commanded a squad of five once-in-a-generation basketball prodigies, earning the respect and obedience
+                of elite players like Aomine, Midorima, Murasakibara, and Kise.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-rank">03</div>
+            <div class="timeline-content">
+              <h3>Freshman Captain of Rakuzan High</h3>
+              <p>
+                Became the starting point guard and captain of a powerhouse high school team in his first year—a rare
+                feat that required leading three prideful upperclassmen known as the Uncrowned Kings.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-rank">04</div>
+            <div class="timeline-content">
+              <h3>Captain of Team Vorpal Swords</h3>
+              <p>
+                Selected to lead Japan's all-star streetball team in <em>Kuroko no Basket: Last Game (Extra Game)</em>,
+                uniting the Generation of Miracles alongside Kagami and Kuroko to defeat the American team Jabberwock.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-rank">05</div>
+            <div class="timeline-content">
+              <h3>Interhigh Champion &amp; Winter Cup Runner-Up</h3>
+              <p>
+                Guided Rakuzan High to a championship victory in the Interhigh tournament and a second-place finish in
+                the Winter Cup finals against Seirin High.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         MEDIA SECTION (3-COLUMN 16:9 EQUAL GRID + SMOOTH HOVER ZOOM + LIGHTBOX)
+         ====================================================================== -->
+    <section id="media" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">04 // Visual Archive</span>
+            <h2 class="section-title">Media Gallery</h2>
+          </div>
+        </div>
+
+        <div class="media-grid">
+          <!-- Gallery Item 1 (Local Asset: media1.png) -->
+          <div
+            class="media-card reveal"
+            tabindex="0"
+            role="button"
+            data-src="media1.png"
+            data-title="ARCHIVE 01 // EMPEROR EYE AWAKENED"
+            aria-label="Open media1.png in lightbox"
+          >
+            <img
+              src="media1.png"
+              alt="Seijuro Akashi Gallery Screenshot 1"
+              class="js-fallback-img"
+            />
+            <div class="media-fallback">
+              <strong>LOCAL ASSET READY</strong>
+              <code>media1.png</code>
+            </div>
+            <span class="media-zoom-pill">EXPAND +</span>
+            <div class="media-overlay">
+              <span class="media-tag">FILE // 01</span>
+              <span class="media-caption">Emperor Eye Awakened</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 (Local Asset: media2.png) -->
+          <div
+            class="media-card reveal"
+            tabindex="0"
+            role="button"
+            data-src="media2.png"
+            data-title="ARCHIVE 02 // RAKUZAN COMMANDER"
+            aria-label="Open media2.png in lightbox"
+          >
+            <img
+              src="media2.png"
+              alt="Seijuro Akashi Gallery Screenshot 2"
+              class="js-fallback-img"
+            />
+            <div class="media-fallback">
+              <strong>LOCAL ASSET READY</strong>
+              <code>media2.png</code>
+            </div>
+            <span class="media-zoom-pill">EXPAND +</span>
+            <div class="media-overlay">
+              <span class="media-tag">FILE // 02</span>
+              <span class="media-caption">Rakuzan Commander</span>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 (Local Asset: media3.png) -->
+          <div
+            class="media-card reveal"
+            tabindex="0"
+            role="button"
+            data-src="media3.png"
+            data-title="ARCHIVE 03 // TEAM VORPAL SWORDS"
+            aria-label="Open media3.png in lightbox"
+          >
+            <img
+              src="media3.png"
+              alt="Seijuro Akashi Gallery Screenshot 3"
+              class="js-fallback-img"
+            />
+            <div class="media-fallback">
+              <strong>LOCAL ASSET READY</strong>
+              <code>media3.png</code>
+            </div>
+            <span class="media-zoom-pill">EXPAND +</span>
+            <div class="media-overlay">
+              <span class="media-tag">FILE // 03</span>
+              <span class="media-caption">Team Vorpal Swords</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       LIGHTBOX MODAL FOR FULL-RESOLUTION WIDESCREEN PREVIEW
+       ======================================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media preview">
+    <div class="lightbox-dialog">
+      <img src="" alt="Expanded gallery preview" class="lightbox-img" id="lightboxImg" />
+      <div class="lightbox-bar">
+        <span class="lightbox-title" id="lightboxTitle">ARCHIVE</span>
+        <div class="lightbox-controls">
+          <button class="lightbox-btn" id="lightboxPrev" aria-label="Previous image">PREV</button>
+          <button class="lightbox-btn" id="lightboxNext" aria-label="Next image">NEXT</button>
+          <button class="lightbox-btn" id="lightboxClose" aria-label="Close lightbox">CLOSE ✕</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SOCMED / CONTACT SECTION (FOOTER)
+       ======================================================================== -->
+  <footer id="socmed" class="footer-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="section-kicker">05 // Connect &amp; Channels</span>
+          <h2 class="section-title">Socmed &amp; Contact</h2>
+        </div>
+        <span class="section-index">DIRECT LINKS</span>
+      </div>
+
+      <div class="socmed-grid">
+        <!-- GitHub -->
+        <a
+          href="https://github.com/manyagami"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="socmed-card reveal"
+        >
+          <div class="socmed-top">
+            <div class="socmed-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </div>
+            <span class="socmed-arrow">↗</span>
+          </div>
+          <div>
+            <div class="socmed-platform">GitHub</div>
+            <div class="socmed-handle">@manyagami</div>
+          </div>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          href="https://tiktok.com/@surrenderbythem"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="socmed-card reveal"
+        >
+          <div class="socmed-top">
+            <div class="socmed-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64c.298 0 .593.057.87.168V9.43a6.33 6.33 0 00-.87-.06 6.34 6.34 0 106.34 6.34V8.81a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.24z" />
+              </svg>
+            </div>
+            <span class="socmed-arrow">↗</span>
+          </div>
+          <div>
+            <div class="socmed-platform">TikTok</div>
+            <div class="socmed-handle">@surrenderbythem</div>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://instagram.com/mandarwishhhh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="socmed-card reveal"
+        >
+          <div class="socmed-top">
+            <div class="socmed-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </div>
+            <span class="socmed-arrow">↗</span>
+          </div>
+          <div>
+            <div class="socmed-platform">Instagram</div>
+            <div class="socmed-handle">@mandarwishhhh</div>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:mandarwish017@gmail.com" class="socmed-card reveal">
+          <div class="socmed-top">
+            <div class="socmed-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <span class="socmed-arrow">↗</span>
+          </div>
+          <div>
+            <div class="socmed-platform">Email</div>
+            <div class="socmed-handle">mandarwish017@gmail.com</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span><strong>AKASHI SEIJURO // PORTFOLIO</strong> — Rakuzan High #4</span>
+        <span>Kuroko's Basketball Tribute · Editorial Poster Edition</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
